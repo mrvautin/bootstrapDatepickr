@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<title>bootstrapDatepickr examples</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="dist/bootstrap-3.3.5.min.css">
+	<link rel="stylesheet" href="src/bootstrapDatepickr-1.0.0.css">
+	<link rel="stylesheet" href="dist/font-awesome.min.css">
+	<script src="dist/jquery-2.1.4.min.js"></script>
+	<script src="dist/bootstrap-3.3.5.min.js"></script>
+	<script type="text/javascript" src="dist/bootstrapDatepickr-1.0.0.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#calendar").bootstrapDatepickr();
+			$("#calendar1").bootstrapDatepickr({date_format: "d-m-Y"});
+			$("#calendar2").bootstrapDatepickr({date_format: "l, do F Y"});
+		});
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="page-header">
+			<h1>bootstrapDatepickr examples</h1>
+			<p class="lead">A few basic examples showing bootstrapDatepickr in action.</p>
+		</div>
+		
+		<h3>Input with input-group addon</h3>
+		<p>An input with a Bootstrap input-group addon and a Fontawesome icon.</p>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="input-group">
+					<span class="input-group-addon" id="basic-addon1"><i class="fa fa-calendar"></i></span>
+					<input type="text" id="calendar" placeholder="test" class="form-control">
+				</div>
+			</div>
+		</div>
+		<hr/>
+		<h3>Formatted date - d-m-Y</h3>
+		<p>A formatted date of two digit day, two digit month and 4 digit year.</p>
+		<div class="row">
+			<div class="col-md-4">
+				<input type="text" id="calendar1" placeholder="test" class="form-control">
+			</div>
+		</div>
+		<hr/>
+		<h3>Formatted date - l, do F Y</h3>
+		<p>A formatted date of full day name, octal two digit day number (eg: 1st, 22nd), full month and 4 digit year.</p>
+		<div class="row">
+			<div class="col-md-4">
+				<input type="text" id="calendar2" placeholder="test" class="form-control">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
