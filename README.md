@@ -66,7 +66,7 @@ Example usage:
 </script>
 ```
 
-A list of date format characters is listed below. Note: You can use punctuation to format your date to your liking. Eg: Saturday, 1st of April 2005 would be ` 
+A list of date format characters is listed below. Note: You can use punctuation to format your date to your liking. Eg: Saturday, 1st of April 2005 would be `l, do of F Y` 
 
 |Character|Description|Example|
 |--- |--- |--- |
